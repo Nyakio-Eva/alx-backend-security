@@ -59,7 +59,7 @@ MIDDLEWARE = [
     'backend_security.ip_tracking.middleware.IPLoggingMiddleware',
 ]
 
-ROOT_URLCONF = 'backend_security.urls'
+ROOT_URLCONF = 'backend_security.backend_security.urls'
 
 TEMPLATES = [
     {
