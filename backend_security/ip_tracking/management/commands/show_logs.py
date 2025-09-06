@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from ip_tracking.models import RequestLog
+from backend_security.ip_tracking.models import RequestLog
 
 
 class Command(BaseCommand):

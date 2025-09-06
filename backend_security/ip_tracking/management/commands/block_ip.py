@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand, CommandError
-from ip_tracking.models import BlockedIP
+from backend_security.ip_tracking.models import BlockedIP
 
 class Command(BaseCommand):
     help = "Block an IP address by adding it to the BlockedIP model"

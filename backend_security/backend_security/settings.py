@@ -56,7 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     
     #custom ip tracking middleware
-    'ip_tracking.middleware.IPLoggingMiddleware',
+    'backend_security.ip_tracking.middleware.IPLoggingMiddleware',
 ]
 
 ROOT_URLCONF = 'backend_security.urls'
@@ -145,7 +145,7 @@ CELERY_BROKER_URL = config("CELERY_BROKER_URL")
 
 CELERY_BEAT_SCHEDULE = {
     "detect-anomalies-every-hour": {
-        "task": "ip_tracking.tasks.detect_anomalies",
+        "task": "backend_security.ip_tracking.tasks.detect_anomalies",
         "schedule": crontab(minute=0, hour="*"),  # every hour on the hour
     },
 }

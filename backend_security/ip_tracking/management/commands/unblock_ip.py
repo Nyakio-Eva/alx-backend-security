@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from ip_tracking.models import BlockedIP
+from backend_security.ip_tracking.models import BlockedIP
 
 class Command(BaseCommand):
     help = "Unblock an IP address by removing it from the BlockedIP model"
