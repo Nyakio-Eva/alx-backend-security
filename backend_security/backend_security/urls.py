@@ -19,5 +19,5 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("ip_tracking/", include("backend_security.ip_tracking.urls")),
+    path("backend_security.ip_tracking/", include("backend_security.ip_tracking.urls")),
 ]

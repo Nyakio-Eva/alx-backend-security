@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('ip_tracking', '0002_blockedip'),
+        ('backend_security.ip_tracking', '0002_blockedip'),
     ]
 
     operations = [
