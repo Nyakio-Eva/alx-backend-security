@@ -77,7 +77,7 @@ TEMPLATES = [
 ]
 
 
-WSGI_APPLICATION = "backend_security.wsgi.application"
+WSGI_APPLICATION = "backend_security.backend_security.wsgi.application"
 
 
 
